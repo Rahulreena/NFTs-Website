@@ -1,0 +1,144 @@
+section {
+  height: 115vh;
+  background: #110229;
+
+  .Business-Partners {
+    display: flex;
+    gap: 8rem;
+    justify-content: center;
+    padding: 8rem 2rem;
+
+    .partner-logo {
+    }
+  }
+
+  .Main-Head {
+    display: flex;
+
+    .Main-1 {
+      width: 58rem;
+      height: 61rem;
+      display: flex;
+      justify-content: center;
+
+      .main-text {
+        display: flex;
+        flex-direction: column;
+        padding-left: 6rem;
+        gap: 2rem;
+        justify-content: center;
+        .main-h1 {
+          color: white;
+          font-size: 5rem;
+        }
+
+        .main-h6 {
+          font-size: 1.4rem;
+          color: white;
+          line-height: 2.5rem;
+          font-weight: 100;
+        }
+
+        .main-A {
+          text-decoration: none;
+          font-size: 1.5rem;
+          color: white;
+          background: linear-gradient(#7273d9, #b35bc7, #d927c3);
+          height: 5rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 13rem;
+        }
+      }
+    }
+
+    .Main-2 {
+      width: 85rem;
+      height: 60rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      .Main-content{
+        display: flex;
+        gap: 2rem;
+        .card {
+            width: 35rem;
+            height: 23.5rem;
+    
+            display: flex;
+            border: 2px solid transparent;
+            border-image: linear-gradient(70deg,#7273d9, #b35bc7, #d927c3,transparent 80%);
+            border-image-slice: 1;
+            .card-content {
+              padding: 2rem;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              gap: 2rem;
+              .card-img {
+                padding: 1rem;
+                width: 5.5rem;
+                background: #ffffff1f;
+              }
+    
+              .card-h2 {
+                font-size: 2.2rem;
+                font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+                  "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+                color: white;
+              }
+    
+              .card-h6 {
+                color: white;
+                font-size: 1.5rem;
+                font-weight: 200;
+              }
+            }
+          }
+      }
+ 
+.main-content-2{
+display: flex;
+gap: 2rem;
+    .card-2 {
+        width: 35rem;
+        height: 23.5rem;
+
+        display: flex;
+        border: 2px solid transparent;
+        border-image: linear-gradient(70deg,#7273d9, #b35bc7, #d927c3,transparent 80%);
+        border-image-slice: 1;
+        .card-content-2 {
+          padding: 2rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 2rem;
+
+          .card-img-2 {
+            padding: 1rem;
+            width: 5.5rem;
+            background: #ffffff1c;
+          }
+
+          .card-h2-2 {
+            font-size: 2.2rem;
+            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+              "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+            color: white;
+          }
+
+          .card-h6-2 {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 200;
+          }
+        }
+      }
+}
+   
+    }
+  }
+}
