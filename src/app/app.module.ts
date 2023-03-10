@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { PartnerWorkComponent } from './partner-work/partner-work.component';
+import { TrendingAuctionComponent } from './trending-auction/trending-auction.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    PartnerWorkComponent
+    PartnerWorkComponent,
+    TrendingAuctionComponent
   ],
   imports: [
     BrowserModule,

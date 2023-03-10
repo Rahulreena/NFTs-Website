@@ -1,12 +1,32 @@
-section {
-  height: 115vh;
-  background: #110229;
+@import '../../assets/scss/base/variables';
 
+
+section {
+ 
+  background: #110229;
+@media #{$mobile-xsMax}{
+  overflow: hidden;
+
+}
   .Business-Partners {
     display: flex;
+    flex-wrap: wrap;
     gap: 8rem;
     justify-content: center;
     padding: 8rem 2rem;
+
+    @media #{$mobile-xsMax}{
+      gap: 2.5rem;
+      padding: 3rem 1.5rem;
+    }
+
+    @media #{$desktop-max}{
+      padding: 3rem 1.5rem;
+  }
+
+  @media #{$desktop-pro-max}{
+    padding: 3rem 1.5rem;
+  }
 
     .partner-logo {
     }
@@ -14,19 +34,38 @@ section {
 
   .Main-Head {
     display: flex;
+gap: 5rem;
+    @media #{$mobile-xsMax}{
+      flex-direction: column;
+    }
+    @media #{$desktop-max}{
+      flex-direction: column;
+  }
+
+  @media #{$desktop-pro-max}{
+    flex-direction: column;
+  }
 
     .Main-1 {
-      width: 58rem;
-      height: 61rem;
+     
       display: flex;
       justify-content: center;
-
+      @media #{$mobile-xsMax}{
+        height: 39rem;
+        width: 42rem;
+      padding: 2rem 3rem;
+        justify-content: flex-start;
+       }
       .main-text {
         display: flex;
         flex-direction: column;
         padding-left: 6rem;
         gap: 2rem;
         justify-content: center;
+        @media #{$mobile-xsMax}{
+         padding: 0;
+         justify-content: flex-start;
+        }
         .main-h1 {
           color: white;
           font-size: 5rem;
@@ -54,8 +93,7 @@ section {
     }
 
     .Main-2 {
-      width: 85rem;
-      height: 60rem;
+    
       display: flex;
       flex-direction: column;
       gap: 2rem;
@@ -63,6 +101,19 @@ section {
       .Main-content{
         display: flex;
         gap: 2rem;
+        @media #{$mobile-xsMax}{
+          width: 41rem;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        @media #{$desktop-max}{
+          justify-content: center;
+      }
+
+      @media #{$desktop-pro-max}{
+        justify-content: center;
+      }
         .card {
             width: 35rem;
             height: 23.5rem;
@@ -102,6 +153,19 @@ section {
 .main-content-2{
 display: flex;
 gap: 2rem;
+@media #{$mobile-xsMax}{
+  width: 41rem;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+@media #{$desktop-max}{
+  justify-content: center;
+}
+
+@media #{$desktop-pro-max}{
+  justify-content: center;
+}
     .card-2 {
         width: 35rem;
         height: 23.5rem;
