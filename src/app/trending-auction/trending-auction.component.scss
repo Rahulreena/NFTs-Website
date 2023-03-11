@@ -13,7 +13,7 @@ section {
     justify-content: space-between;
     padding: 8rem 11rem 0;
     @media #{$mobile-xsMax}{
-      padding: 3rem 4rem;
+      padding: 6rem 4rem;
     }
  
     .content-1 {
@@ -72,12 +72,17 @@ section {
     display: flex;
     gap: 3rem;
     justify-content: center;
+    flex-wrap: wrap;
     padding: 9rem 10.8rem;
     @media #{$mobile-xsMax}{
       flex-direction: column;
       padding: 2rem 0;
       align-items: center;
     }
+    // @media #{$desktop-lgMax}{
+    //   flex-direction: column;
+    //   align-items: center;
+    //           }
     .card-content {
       width: 39.5rem;
       height: 56rem;
@@ -86,6 +91,7 @@ section {
       display: flex;
       flex-direction: column;
       gap: 0.7rem;
+      transition: all 0.4s ease;
       .content-text {
         display: flex;
         justify-content: space-between;
@@ -115,6 +121,7 @@ section {
         display: flex;
         justify-content: space-between;
         padding: 1.5rem 2rem;
+   
         .card-time {
             display: flex;
             flex-direction: column;
@@ -149,6 +156,7 @@ section {
       }
     }
     .card-content:hover{
+      transform: translateY(-3.6rem);
         border: 1px solid white;
     }
   }

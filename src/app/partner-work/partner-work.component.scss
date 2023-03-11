@@ -15,16 +15,18 @@ section {
     justify-content: center;
     padding: 8rem 2rem;
 
-    @media #{$mobile-xsMax}{
-      gap: 2.5rem;
-      padding: 3rem 1.5rem;
-    }
+    // @media #{$mobile-xsMax}{
+    //   gap: 2.5rem;
+      
+    // }
 
     @media #{$desktop-max}{
-      padding: 3rem 1.5rem;
+      gap: 4rem;
+      padding: 4rem 1.5rem;
   }
 
-  @media #{$desktop-pro-max}{
+  @media #{$desktop-lgMax}{
+gap: 3rem;
     padding: 3rem 1.5rem;
   }
 
