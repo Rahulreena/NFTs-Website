@@ -1,0 +1,74 @@
+@import "../../assets/scss/base/variables";
+
+footer{
+    background: #110229;
+
+ 
+    .container{
+        line-height: 2.5;
+        padding: 10rem;
+        .row{
+           display: flex;
+           flex-wrap: wrap;
+            .footer-col{
+width: 25%;
+
+@media #{$desktop-max}{
+    width: 50%;
+    margin-bottom:3rem ;
+}
+@media #{$mobile-xsMax}{
+    width: 100%;
+}
+
+h4{
+color: white;
+font-size: 2.3rem;
+}
+
+ul{
+list-style: none;
+    li{
+
+        a{
+text-decoration: none;
+color: white;
+font-size: 1.4rem;
+        }
+
+    
+    }
+}
+
+p{
+    padding: 1.2rem 0;
+    color: white;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.icons{padding: 2.5rem 0;
+display: flex;
+gap: 2.5rem;
+    .icon-1{
+
+        i{
+            padding: 0.8rem 1.1rem;
+            border-radius: 0.5rem;
+            background: linear-gradient(132.51deg, #7572D9 2.66%, #B959C6 49.09%, #D62FC3 98.67%);
+font-size: 2rem;
+color: white;
+
+        }
+        .fb{
+            font-size: 1.5rem;
+            padding: 1.1rem 1.5rem;
+        }
+    }
+}
+            }
+
+        }
+    }
+}

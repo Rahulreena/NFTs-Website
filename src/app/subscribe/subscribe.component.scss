@@ -1,4 +1,109 @@
-section{  
-    background: #110229;
-    height: 100vh;
+@import "../../assets/scss/base/variables";
+
+section {
+  background: #110229;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .subscribe-head {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(2px);
+    width: 106rem;
+    height: 35rem;
+    overflow: hidden;
+    display: flex;
+    @media #{$desktop-max} {
+      width: 70rem;
+  justify-content: center;
+    }
+    @media #{$desktop-pro-max} {
+      flex-direction: column;
+      height: 60rem;
+     
+
+      align-items: center;
+      gap: 5rem;
+    }
+    .subscribe-content {
+      position: relative;
+      padding: 0 4rem;
+      display: flex;
+      width: 70rem;
+      flex-direction: column;
+      justify-content: center;
+      gap: 3rem;
+
+      @media #{$mobile-xsMax} {
+        align-items: center;
+        padding: 2.5rem 3rem;
+      }
+      .sub-h1 {
+        font-size: 4.5rem;
+        color: white;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+
+        @media #{$desktop-max} {
+          font-size: 3.3rem;
+          text-align: center;
+          padding: 0rem 5rem;
+        }
+      }
+      .sub-h3 {
+        font-size: 1.6rem;
+        font-weight: 100;
+        color: white;
+        @media #{$desktop-max} {
+          font-size: 1.5rem;
+          text-align: center;
+        }
+        @media #{$mobile-xsMax} {
+          font-size: 1.4rem;
+          padding: 0 11rem;
+        }
+      }
+      .input-button {
+        display: flex;
+        .sub-input {
+          width: 40rem;
+          height: 5.5rem;
+          background: rgba(255, 255, 255, 0.2);
+          backdrop-filter: blur(2px);
+          outline: none;
+          border: none;
+          @media #{$mobile-xsMax} {
+            width: 27rem;
+          }
+        }
+
+        ::placeholder {
+          padding-left: 2rem;
+          color: white;
+        }
+
+        .sub-button {
+          width: 14.9rem;
+          height: 5.5rem;
+          color: white;
+          font-size: 1.7rem;
+          border: none;
+
+          background: linear-gradient(
+            93.95deg,
+            #6a76db 0.87%,
+            #b65ac6 49.01%,
+            #d924c3 99.65%
+          );
+        }
+      }
+    }
+
+    .subscribe-img {
+      margin-top: -2rem;
+      .sub-img {
+        z-index: 10;
+      }
+    }
+  }
 }

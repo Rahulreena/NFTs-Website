@@ -3,14 +3,15 @@
 
 section{
 
-height: 118vh;
 background: url(../../assets/main.png);
 background-repeat: no-repeat;
 background-size: cover;
+overflow: hidden;
+
 @media #{$mobile-xsMax}{
 background-position: center;
 background-size: cover;
-overflow: hidden;
+
 }
 @media #{$desktop-lgMax}{
     background-position: center;
@@ -22,14 +23,16 @@ overflow: hidden;
     header{
 display: flex;
 justify-content: space-between;
-height: 10rem;
-padding: 0rem 4rem;
+
+padding: 4rem 4rem;
+overflow: hidden;
 @media #{$desktop-lgMax} {
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
     }
     @media #{$desktop-max}{
         gap: 2rem;
+       
     }
 
 .logo{
@@ -56,6 +59,7 @@ align-items: center;
     display: flex;
     gap: 5rem;
     align-items: center;
+    
     @media #{$desktop-lgMax} {
        flex-direction: column;
        gap: 1.7rem;

@@ -9,6 +9,7 @@ import { TrendingAuctionComponent } from './trending-auction/trending-auction.co
 import { TopSellerComponent } from './top-seller/top-seller.component';
 import { HotCollectionComponent } from './hot-collection/hot-collection.component';
 import { SubscribeComponent } from './subscribe/subscribe.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SubscribeComponent } from './subscribe/subscribe.component';
     TrendingAuctionComponent,
     TopSellerComponent,
     HotCollectionComponent,
-    SubscribeComponent
+    SubscribeComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
